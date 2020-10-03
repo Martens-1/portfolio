@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+a {
+    color: #000;
+    text-decoration: none;
+    
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.fab {
+    color: #ffffff;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header > .container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    max-width: none;
+    padding: 0 60px;
+}
+
+/* ヘッダーロゴ */
+.header-left {
+    display: block;
+}
+.header-left img {
+    height: 32px;
+    vertical-align: bottom;
+}
+
+/* ヘッダーナビ */
+.header-right {
+    margin: 0 0 0 auto;
+}
+.header-list {
+    display: flex;
+    margin: 0 -20px;
+}
+.header-list li{
+    padding: 20px;
+}
+.header-list a {
+    color: #ffffff;
+    font: 14px "Avenir Next";
+}
+.header-list a:hover {
+    border-bottom: 1px solid #bbb;
+}
+
+/* twitter */
+.header-btn {
+    margin-left: 60px;
+    border-left: 1px solid #ffffff;
+    padding-left: 60px;
+}
+
+/* トップビュー */
+.top-wrapper {
+    background: url(../img/top2.jpg)no-repeat bottom center;
+    background-size: cover;
+}
+.top-wrapper > .container { 
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.top-title {
+    margin: 295px 0 40px 0;
+}
+.top-wrapper > .container p {
+    padding-top: 60px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.top-wrapper p {
+    margin-left: 10px;
+}
+/* エリアホーム */
+[class*="area_home"] {
+    box-sizing: border-box;
+    height: 700px;
+}
+
+/* 見出し */
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.title {
+    font:  41px/1em "Lao MN";
+    margin-top: 60px;
+    position: relative;
+}
+.title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #134CE5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* アバウト */
+.area_home_about {
+    height: 619px;
+    background-color: #f7f7f7;
+}
+.about-wrapper {
+    padding: 150px;
+    display: flex;
+    margin-left: 60px;
+}
+.about-left {
+    width: 386px;
+    margin-right: 60px;
+}
+.about-img {
+    max-width: 100%;
+}
+.description {
+    text-indent: -3.0em;
+}
+.about-right {
+    width: 386px;
+    margin-left: 60px;
+    margin-top: -60px;
+}
+.about-right p {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: -50px;
+}
+.description {
+    line-height: 1.3em;
+}
+.btn-area {
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: -50px;
+    background-color:  #134CE5;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+}
+.btn-area:hover {
+    background-color: rgba(19, 76, 229, 0.9);
+}
+.btn-area a {
+    line-height: 40px;
+    font-size: 18px;
+    display: block;
+    margin-left: 10px;
+
+}
+.btn-area i {
+    line-height: 20px;
+}
+.twitter {
+    color: #ffffff;
+    margin-right: 10px;
+}
+.fa-twitter {
+    margin-right: 10px;
+}
+
+/* スキル */
+.bg_black {
+    color: #ffffff;
+    background-color: #000;
+}
+.skill-wrapper {
+    padding: 85px;
+    margin-left: -30px;
+    text-align: center;
+}
+.skill {
+    border: 1px solid #bbb;
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-radius: 5px;
+}
+.skill p {
+    display: inline-block;
+    font-size: 24px;
+    padding-top: 60px;
+    border-bottom: 2px solid #134ce5;
+}
+.skill ul {
+    margin-top: 60px;
+    line-height: 2em;
+}
+
+/* ワークス */
+.area_home_works {
+    background: url(../img/works.jpg)no-repeat center center;
+    background-size: cover;
+}
+.work-wrapper {
+    padding: 85px;
+    margin-left: -15px;
+}
+.work {
+    display: inline-block;
+    width: 300px;
+    height: 380px;
+    background-color: black;
+    margin-left: 30px;
+    vertical-align: top;
+}
+.work-type {
+    height: 90px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+.work p {
+    color: #ffffff;
+}
+.works-link {
+    width: 300px;
+    height: 145px;
+    border: none;
+}
+.works-img {
+    max-width: 100%;
+}
+.work-title {
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.work-contents {
+    font-size: 14px;
+    text-align: center;
+    line-height: 2em;
+}
+
+/* コンタクト */
+.area_home_contact {
+    height: 570px;
+    background-color: #f7f7f7;
+}
+.body_home {
+    height: 300px;
+}
+.body_home p {
+    margin-top: 50px;
+    text-align: center;
+}
+.contact-wrapper {
+    width: 780px;
+    height: 200px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+}
+.contact-wrapper > .btn-area {
+    margin-top: 60px;
+    margin-left: 5px;
+}
+
+/* コピーライト */
+.copyright {
+    text-align: center;
+    padding-bottom: 60px;
+    background-color: #f7f7f7;
+}
