@@ -68,7 +68,7 @@ header > .container {
 
 /* トップビュー */
 .top-wrapper {
-    background: url(../img/top2.jpg)no-repeat bottom center;
+    background: url(../img/top.jpg)no-repeat bottom center;
     background-size: cover;
 }
 .top-wrapper > .container { 
@@ -261,7 +261,7 @@ header > .container {
 
 /* コンタクト */
 .area_home_contact {
-    height: 570px;
+    height: 500px;
     background-color: #f7f7f7;
 }
 .body_home {
@@ -270,6 +270,7 @@ header > .container {
 .body_home p {
     margin-top: 50px;
     text-align: center;
+
 }
 .contact-wrapper {
     width: 780px;
@@ -286,8 +287,16 @@ header > .container {
 }
 
 /* コピーライト */
+.foot-wrapper {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    border-top: 1px #bbb solid;
+
+}
 .copyright {
     text-align: center;
-    padding-bottom: 60px;
-    background-color: #f7f7f7;
+}
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
 }
