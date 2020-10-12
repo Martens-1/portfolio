@@ -85,6 +85,10 @@ header > .container {
 .top-wrapper p {
     margin-left: 10px;
 }
+.scroll-arrow {
+    margin-top: 80px;
+    animation: scroll-fade 1.5s infinite;
+}
 /* エリアホーム */
 [class*="area_home"] {
     box-sizing: border-box;
@@ -114,17 +118,18 @@ header > .container {
 
 /* アバウト */
 .area_home_about {
-    height: 619px;
+    height: 700px;
     background-color: #f7f7f7;
 }
 .about-wrapper {
     padding: 150px;
     display: flex;
-    margin-left: 60px;
+    justify-content: center;
 }
 .about-left {
-    width: 386px;
-    margin-right: 60px;
+    width: 450px;
+    height: 272px;
+    margin-right: 70px;
 }
 .about-img {
     max-width: 100%;
@@ -134,7 +139,7 @@ header > .container {
 }
 .about-right {
     width: 386px;
-    margin-left: 60px;
+    margin-left: 70px;
     margin-top: -60px;
 }
 .about-right p {
@@ -144,7 +149,8 @@ header > .container {
     margin-left: -50px;
 }
 .description {
-    line-height: 1.3em;
+    font-size: 15px;
+    line-height: 1.6em;
 }
 .btn-area {
     width: 250px;
@@ -183,29 +189,29 @@ header > .container {
     background-color: #000;
 }
 .skill-wrapper {
-    padding: 85px;
-    margin-left: -30px;
+    padding: 65px 30px;
+    margin: 40px 130px 110px 130px;
     text-align: center;
+    border: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
 }
 .skill {
-    border: 1px solid #bbb;
-    display: inline-block;
-    width: 250px;
-    height: 350px;
-    margin-left: 30px;
-    box-sizing: border-box;
-    vertical-align: top;
-    border-radius: 5px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
 }
 .skill p {
     display: inline-block;
-    font-size: 24px;
-    padding-top: 60px;
+    font-size: 18px;
     border-bottom: 2px solid #134ce5;
 }
 .skill ul {
-    margin-top: 60px;
+    margin-top: 50px;
     line-height: 2em;
+}
+.skill-icon {
+    margin-top: 20px;
 }
 
 /* ワークス */
@@ -257,29 +263,32 @@ header > .container {
 
 /* コンタクト */
 .area_home_contact {
-    height: 500px;
+    height: 600px;
     background-color: #f7f7f7;
 }
 .body_home {
     height: 300px;
 }
 .body_home p {
+    font-size: 14px;
     margin-top: 50px;
     text-align: center;
-
+    line-height: 1.5;
 }
 .contact-wrapper {
     width: 780px;
     height: 200px;
-    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px auto;
+    margin: 80px auto;
 }
 .contact-wrapper > .btn-area {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 5px;
+}
+.works-img {
+    margin-bottom: 30px;
 }
 
 /* コピーライト */
